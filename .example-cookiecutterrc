@@ -1,0 +1,3 @@
+default_context:
+  deployment_name: example
+  description: Example description content

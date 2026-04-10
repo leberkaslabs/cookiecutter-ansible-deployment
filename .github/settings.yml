@@ -1,0 +1,5 @@
+---
+# https://github.com/apps/settings
+repository:
+  description: This repository offers a ready-to-use template for building Ansible deployments with Cookiecutter.
+  topics: ansible, ansible-deployment, automation, infrastructure

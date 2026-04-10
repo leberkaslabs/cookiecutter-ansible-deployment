@@ -1,0 +1,9 @@
+---
+- name: Example Playbook
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Replace this task
+      ansible.builtin.debug:
+        msg: This is the primary Ansible deployment playbook

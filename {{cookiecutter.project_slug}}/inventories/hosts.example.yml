@@ -1,0 +1,5 @@
+---
+all:
+  hosts:
+    hosts.example.com:
+      ansible_become: true

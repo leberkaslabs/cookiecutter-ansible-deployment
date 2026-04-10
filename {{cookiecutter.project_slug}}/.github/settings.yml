@@ -1,0 +1,5 @@
+---
+# https://github.com/apps/settings
+repository:
+  description: {{ cookiecutter.description }}
+  topics: ansible, ansible-deployment, automation, infrastructure

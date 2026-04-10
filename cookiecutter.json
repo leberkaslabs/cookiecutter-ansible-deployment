@@ -1,0 +1,8 @@
+{
+    "full_name": "Niclas Spreng",
+    "github_username": "leberkaslabs",
+    "deployment_name": "Ansible Deployment Boilerplate",
+    "project_slug": "ansible-{{ cookiecutter.deployment_name.lower().replace(' ', '_') }}-deployment",
+    "description": "Enter Ansible deployment description",
+    "license": ["MIT", "Proprietary"]
+}

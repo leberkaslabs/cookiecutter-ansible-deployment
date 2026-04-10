@@ -1,0 +1,29 @@
+---
+name: Cookiecutter Test
+
+'on':
+  push:
+    branches:
+      - main
+
+jobs:
+  cookiecutter:
+    name: Cookiecutter
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          # yamllint disable-line rule:quoted-strings
+          python-version: '3.x'
+
+      - name: Install Python dependencies
+        run: pip3 install cookiecutter
+
+      - name: Run Cookiecutter tests
+        run: |
+          cookiecutter --config-file .example-cookiecutterrc --no-input --output-dir $HOME .
