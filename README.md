@@ -28,7 +28,7 @@ cookiecutter https://github.com/leberkaslabs/cookiecutter-ansible-deployment
 [6/7] Select molecule
   1 - docker
   2 - vagrant
-  Choose from [1/2] (1): 2
+  Choose from [1/2] (1): 1
 [7/7] Select license
   1 - MIT
   2 - Proprietary
