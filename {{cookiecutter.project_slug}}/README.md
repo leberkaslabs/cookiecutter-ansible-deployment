@@ -1,6 +1,6 @@
 # Ansible Deployment: {{ cookiecutter.deployment_name.lower() }}
 
-[![Ansible Lint](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions/workflows/ansible-lint-action.yml/badge.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions/workflows/ansible-lint-action.yml)
+[![Ansible Lint](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions/workflows/ansible-lint.yml)
 
 {{ cookiecutter.description }}
 
@@ -31,11 +31,7 @@
 This project includes [Ansible Molecule](https://github.com/ansible/molecule) to streamline testing and development.
 
 ```bash
-# Run the Docker scenario explicitly
-molecule test -s docker
-
-# Run the Vagrant scenario explicitly
-molecule test -s vagrant
+molecule test
 ```
 
 Molecule will automatically create, converge, verify and destroy the test instances.

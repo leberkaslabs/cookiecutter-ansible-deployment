@@ -1,8 +1,15 @@
 # Python requirements for executing
 ansible
 ansible-lint
-docker
-molecule
-molecule-plugins[docker]
-molecule-plugins[vagrant]
+j2lint
 yamllint
+
+# Molecule requirements
+molecule
+{%- if cookiecutter.molecule == "docker" %}
+docker
+molecule-plugins[docker]
+{%- elif cookiecutter.molecule == "vagrant" %}
+molecule-plugins[vagrant]
+python-vagrant
+{%- endif %}

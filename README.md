@@ -20,12 +20,16 @@ cookiecutter https://github.com/leberkaslabs/cookiecutter-ansible-deployment
 > *The values in parentheses show the default options*
 
 ```bash
-[1/6] full_name (Niclas Spreng): 
-[2/6] github_username (leberkaslabs): 
-[3/6] deployment_name (Ansible Deployment Boilerplate): nginx
-[4/6] project_slug (ansible-nginx-deployment): 
-[5/6] description (Enter Ansible deployment description): This is my nginx deployment
-[6/6] Select license
+[1/7] full_name (Niclas Spreng): 
+[2/7] github_username (leberkaslabs): 
+[3/7] deployment_name (Ansible Deployment Boilerplate): nginx
+[4/7] project_slug (ansible-nginx-deployment): 
+[5/7] description (Enter Ansible deployment description): This is my nginx deployment
+[6/7] Select molecule
+  1 - docker
+  2 - vagrant
+  Choose from [1/2] (1): 2
+[7/7] Select license
   1 - MIT
   2 - Proprietary
   Choose from [1/2] (1): 1
